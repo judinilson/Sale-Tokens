@@ -17,6 +17,7 @@ App = {
       // If a web3 instance is already provided by Meta Mask.
       App.web3Provider = web3.currentProvider;
       web3 = new Web3(web3.currentProvider);
+      ethereum.request({ method: "eth_requestAccounts" });
     } else {
       // Specify default instance if no web3 instance provided
       App.web3Provider = new Web3.providers.HttpProvider(
@@ -96,6 +97,7 @@ App = {
       })
       .then(function (tokenPrice) {
         App.tokenPrice = tokenPrice;
+
         $(".token-price").html(
           web3.fromWei(App.tokenPrice, "ether").toNumber()
         );

@@ -13,7 +13,7 @@ What are Initial Coin Offerings? ICOs are another form of cryptocurrency that bu
 
 # Project Results
 
-<!-- ![Logo](./public/screenshot.png) -->
+![Logo](./assets/Screenshot%202022-07-09%20at%2019.37.01.png)
 
 # Getting Started
 
